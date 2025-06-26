@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+    --main-green: #348f50;
+    --accent-green: #56b280;
+    --dark: #1f2d1f;
+    --text: #2e3d2e;
+    --light-bg: #f9faf9;
+    --glow: rgba(83, 193, 141, 0.15);
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--light-bg);
+    color: var(--text);
+}
+
+.login-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    background: linear-gradient(to right, #f0fdf4, #ffffff);
+}
+
+.login-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 6px 18px var(--glow);
+    display: flex;
+    flex-direction: column;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-header .logo-circle {
+    width: 40px;
+    height: 40px;
+    background: var(--main-green);
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.login-header h2 {
+    margin: 0;
+    color: var(--main-green);
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: var(--text);
+}
+
+.form-group input {
+    padding: 10px 12px;
+    border: 1px solid #dce1dc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--main-green);
+    box-shadow: 0 0 0 3px rgba(52, 143, 80, 0.15);
+}
+
+.submit-btn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 0;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    background: var(--main-green);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background: var(--accent-green);
+}
